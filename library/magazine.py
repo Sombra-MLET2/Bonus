@@ -1,5 +1,6 @@
 from library.libraryItem import LibraryItem
 
+
 class Magazine(LibraryItem):
     def __init__(self, title, publisher, pages_number):
         super().__init__(title, "Magazines")  # Chama o inicializador da classe base com título e setor
@@ -24,4 +25,3 @@ class Magazine(LibraryItem):
     def __str__(self):
         # Retorna uma representação em string do objeto Magazine
         return f'Title: {self.title}\nSector: {self.sector}\nPublisher: {self.publisher}\nPages number: {self.pages_number}'
-

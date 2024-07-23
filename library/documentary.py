@@ -1,5 +1,6 @@
 from library.libraryItem import LibraryItem
 
+
 class Documentary(LibraryItem):
     def __init__(self, title, director, producer, year, duration):
         super().__init__(title, "Documentaries")  # Chama o inicializador da classe base com título e setor
@@ -11,4 +12,3 @@ class Documentary(LibraryItem):
     def __str__(self):
         # Retorna uma representação em string do objeto Documentary
         return f'Title: {self.title}\nSector: {self.sector}\nDirector: {self.director}\nYear: {self.year}\nProducer: {self.producer}\nDuration: {self.duration} minutes'
-

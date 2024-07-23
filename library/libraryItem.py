@@ -1,7 +1,8 @@
 from abc import ABC, abstractmethod
 from datetime import datetime, timedelta
 
-class LibraryItem(ABC): #Tornando a classe abstrata
+
+class LibraryItem(ABC):  #Tornando a classe abstrata
     @abstractmethod
     def __init__(self, title, sector):
         # Inicializador da classe LibraryItem

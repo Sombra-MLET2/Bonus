@@ -1,6 +1,4 @@
 import datetime
-
-from library.libraryItem import LibraryItem  # Importe a classe base se necessário
 from library.book import Book  # Supondo que a classe Book esteja definida em um arquivo book.py
 from library.magazine import Magazine  # Supondo que a classe Magazine esteja definida em um arquivo magazine.py
 from library.documentary import Documentary  # Supondo que a classe Documentary esteja definida em um arquivo documentary.py
@@ -17,7 +15,7 @@ book.borrow()  # Testando emprestar o livro
 print()
 book.borrow()
 print()
-book.borrow(datetime.datetime(2024,7,29))
+book.borrow(datetime.datetime(2024, 7, 29))
 
 book.return_book()  # Testando retornar o livro
 print()
@@ -42,4 +40,3 @@ documentary = Documentary("The Social Dilemma", "Jeff Orlowski", "Larissa Rhodes
 print("Documentary Information:")
 print(documentary)  # Chama implicitamente o método __str__
 print()
-
